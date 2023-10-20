@@ -2,9 +2,8 @@ html{
     background-color:white;
 }
 
-  
     b {
-       font-weight: 700; 
+       font-weight: 600; 
     }
 
     em {
@@ -18,7 +17,7 @@ html{
         font-size:18pt;
     }
 
-    li p, time, cite {
+    li p, time {
         font-family: 'Montserrat', sans-serif;
         color:#579FFF
     }
@@ -33,8 +32,9 @@ html{
         color:black;
         font-family: 'EB Garamond', serif;
         font-weight:500;
-        font-size:48pt;
+        font-size:42pt;
         margin-bottom:2%;
+        line-height:1.2em;
     
     }
 
@@ -42,8 +42,8 @@ html{
         color:black;
         font-family: 'EB Garamond', serif;
         font-weight:500;
-        font-size:40pt;
-        margin-bottom:3rem;
+        font-size:36pt;
+        margin-bottom:1.2em;
     }
 
     header {
@@ -102,19 +102,19 @@ html{
     a:link {
         color: #0044F3;
         text-decoration: none;
-        font-weight: 700;
+        font-weight: 600;
     }
 
     a:visited {
         color: #640094;
         text-decoration: none;
-        font-weight: 700;
+        font-weight: 600;
     }
     
     a:hover {
         color: #A500F3;
         text-decoration: none;
-        font-weight: 700;
+        font-weight: 600;
     }
 
     header ul {
@@ -140,6 +140,7 @@ html{
         line-height: 1.25;
         font-weight: 400;
         font-family: 'Montserrat', sans-serif;
+        margin:0px;
     }
 
     footer {
@@ -225,5 +226,3 @@ menu li {
     #sect6 span {
         background: #C5CFE1;
     }
-
-
