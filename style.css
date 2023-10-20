@@ -1,17 +1,65 @@
 html{
     background-color:white;
 }
+    b {
+       font-weight: 700; 
+    }
+
+    em {
+        font-style: italic;
+    }
+    
     li{
         color:579FFF;
         font-family: 'Montserrat', sans-serif;
         font-weight:400;
         font-size:18pt;
     }
+
     h1{
         color:black;
         font-family: 'EB Garamond', serif;
         font-weight:700;
         font-size:48pt;
+    }
+
+    h2{
+        color:black;
+        font-family: 'EB Garamond', serif;
+        font-weight:700;
+        font-size:40pt;
+    }
+
+    article span {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        border: 1px;
+        border-color: black;
+    }
+
+    #sect1 span {
+        background-color: #D6E7FF;
+    }
+
+    #sect2 span {
+        background-color: #FFD8D6;
+    }
+
+    #sect3 span {
+        background-color: #FCFFD8;
+    }
+
+    #sect4 span {
+        background-color: #DDFFD8;
+    }
+
+    #sect5 span {
+        background-color: #F9D8FF;
+    }
+
+    #sect6 span {
+        background-color: #C5CFE1;
     }
 
 
