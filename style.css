@@ -23,10 +23,16 @@ html{
         color:#579FFF
     }
 
+    hr{
+        border-bottom: 1px
+        solid black;
+        margin:20px 0px;
+    }
+
     h1{
         color:black;
         font-family: 'EB Garamond', serif;
-        font-weight:700;
+        font-weight:500;
         font-size:48pt;
         margin-bottom:2%;
     
@@ -37,7 +43,7 @@ html{
         font-family: 'EB Garamond', serif;
         font-weight:500;
         font-size:40pt;
-        margin-bottom:2%;
+        margin-bottom:3rem;
     }
 
     header {
@@ -49,6 +55,13 @@ html{
         font-size:16pt;
         margin:2% 0%;
     }
+
+    nav button{
+        position:fixed;
+        background-color:white;
+        top: 30px;
+}
+
 
     button {
         font-family: 'Montserrat', sans-serif;
@@ -83,6 +96,7 @@ html{
         font-weight:400;
         font-size:20pt;
         line-height: 1.25;
+        margin-bottom: 2rem;
     }
 
     a:link {
