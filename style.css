@@ -1,6 +1,8 @@
 html{
     background-color:white;
 }
+
+  
     b {
        font-weight: 700; 
     }
@@ -30,36 +32,90 @@ html{
         font-size:40pt;
     }
 
-    article span {
+    p {
+        color:black;
+        font-family: 'EB Garamond', serif;
+        font-weight:400;
+        font-size:20pt;
+        line-height: 1.25;
+    }
+
+    a:link {
+        color: #0044F3;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    a:visited {
+        color: #640094;
+        text-decoration: none;
+        font-weight: 700;
+    }
+    
+    a:hover {
+        color: #A500F3;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    section {
+        padding: 0px 16px 0px 16px;
+        margin: 64px 0px 64px 0px;
+    }
+
+    main {
+        padding: 0px 16px 0px 16px;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        padding: 64px 64px 64px 64px;
+    }
+
+    footer p {
+        color: white;
+        font-size: 14px;
+        line-height: 1.25;
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    
+/* adding circles */
+
+    span {
         height: 30px;
         width: 30px;
         border-radius: 50%;
         border: 1px;
+        background: #C5CFE1;
         border-color: black;
+        display: inline-block;
     }
 
     #sect1 span {
-        background-color: #D6E7FF;
+        background: #D6E7FF;
     }
 
     #sect2 span {
-        background-color: #FFD8D6;
+        background: #FFD8D6;
     }
 
     #sect3 span {
-        background-color: #FCFFD8;
+        background: #FCFFD8;
     }
 
     #sect4 span {
-        background-color: #DDFFD8;
+        background: #DDFFD8;
     }
 
     #sect5 span {
-        background-color: #F9D8FF;
+        background: #F9D8FF;
     }
 
     #sect6 span {
-        background-color: #C5CFE1;
+        background: #C5CFE1;
     }
 
 
