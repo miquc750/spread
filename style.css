@@ -1,5 +1,7 @@
 html{
     background-color:white;
+    margin:32px;
+
 }
 
   
@@ -17,21 +19,35 @@ html{
         font-weight:400;
         font-size:18pt;
     }
+    li p{
+        font-family: 'Montserrat', sans-serif;
+        color:#579FFF
+    }
 
     h1{
         color:black;
         font-family: 'EB Garamond', serif;
         font-weight:700;
         font-size:48pt;
+        margin-bottom:2%;
+    
     }
 
     h2{
         color:black;
         font-family: 'EB Garamond', serif;
-        font-weight:700;
+        font-weight:500;
         font-size:40pt;
+        margin-bottom:2%;
     }
-
+    header p{
+        font-family: 'Montserrat', sans-serif;
+        font-size:16pt;
+        margin:2% 0%;
+    }
+    button{
+        margin:0.5rem 0rem;
+    }
     p {
         color:black;
         font-family: 'EB Garamond', serif;
@@ -92,6 +108,7 @@ html{
         background: #C5CFE1;
         border-color: black;
         display: inline-block;
+        margin-right:1%;
     }
 
     #sect1 span {
