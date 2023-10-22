@@ -43,7 +43,7 @@ html{
         font-family: 'EB Garamond', serif;
         font-weight:500;
         font-size:36pt;
-        margin-bottom:1.2em;
+        margin-bottom:1.5rem;
     }
 
     header {
@@ -57,7 +57,6 @@ html{
     }
 
     nav button{
-        position:fixed;
         background-color:white;
         top: 30px;
     }
@@ -72,6 +71,11 @@ html{
         border: 1px solid black;
     }
 
+   nav button:hover{
+        background-color:#D6E7FF;
+
+   }
+
     header button {
         font-size: 24px;
     }
@@ -84,6 +88,7 @@ html{
         border-radius: 50px;
         border: 0px;
     }
+
 
     menu ul {
         display: flex;
@@ -99,24 +104,24 @@ html{
         margin-bottom: 2rem;
     }
 
-    a:link {
+    article a:link {
         color: #0044F3;
         text-decoration: none;
         font-weight: 600;
     }
 
-    a:visited {
+    article a:visited {
         color: #640094;
         text-decoration: none;
         font-weight: 600;
     }
     
-    a:hover {
+    article a:hover {
         color: #A500F3;
         text-decoration: none;
         font-weight: 600;
     }
-
+    
     header ul {
         display: flex;
         flex-wrap: wrap;
