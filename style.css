@@ -71,28 +71,13 @@ html{
         font-size:16pt;
         margin:2% 0%;
     }
-
-    aside{
-        height:fit-content;
-        font-family:'Montserrat', sans-serif;
-        font-size:20pt; 
-        font-weight: 500;
-        align-content: left;
-        position:fixed;
-        top:0px;
-        width:100%;
-        padding:16px 16px;
-        background-color:#ffffff;
-        border-bottom: solid black 1px;
+    header section p{
         margin-left:-16px;
     }
-    summary{
-        width:100%;
-        background-color:white;
-        height:fit-content;
-        text-align: center;
-
+    header section button{
+        margin-left:-16px;
     }
+
 
 
     nav button{
@@ -110,10 +95,31 @@ html{
         border: 1px solid black;
     }
 
-    nav button:hover{
+    nav button:nth-child(1):hover{
         background-color:#D6E7FF;
+    }
 
-   }
+    nav button:nth-child(2):hover{
+    background-color:#FFD8D6;
+    }
+
+    nav button:nth-child(3):hover{
+    background-color:#FCFFD8;
+    }
+
+    nav button:nth-child(4):hover{
+        background-color:#DDFFD8;
+    }
+
+    nav button:nth-child(5):hover{
+        background-color:#F9D8FF;
+    }
+
+    nav button:nth-child(6):hover{
+        background-color:#C5CFE1;
+    }
+    
+
 
     header button {
         font-size: 20px;
@@ -122,6 +128,8 @@ html{
 
     menu {
         margin: 16px;
+
+
     }
 
     menu button {
@@ -309,7 +317,6 @@ menu li {
         background: #C5CFE1;
     }
 
-/* desktop / 
 
 @media (min-width: 480px) {
     header {
@@ -338,10 +345,14 @@ menu li {
 
     header button {
         height: fit-content;
+        
     }
 
     nav button {
         white-space: nowrap;
+    }
+    #sect2:hover{
+        background-color: #FFD8D6;
     }
 
     main { 
@@ -369,4 +380,31 @@ menu li {
         max-width: 50%;
         margin: auto;
     }
+
+
 }
+
+/* desktop / 
+//////////////Mobile menu///////
+aside{
+        height:fit-content;
+        font-family:'Montserrat', sans-serif;
+        font-size:20pt; 
+        font-weight: 500;
+        align-content: left;
+        position:fixed;
+        top:0px;
+        width:100%;
+        padding:16px 16px;
+        background-color:#ffffff;
+        border-bottom: solid black 1px;
+        margin-left:-16px;
+    }
+    summary{
+        width:100%;
+        background-color:white;
+        height:fit-content;
+        text-align: center;
+
+    }
+  
