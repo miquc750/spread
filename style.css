@@ -28,6 +28,11 @@ html{
         margin:20px 0px;
     }
 
+    .menuhr {
+        width: 10em;
+    }
+
+
     h1{
         color:black;
         font-family: 'EB Garamond', serif;
@@ -45,6 +50,14 @@ html{
         font-size:36pt;
         margin-bottom:1.5rem;
     }
+
+    h3 {
+        color:black;
+        font-family: 'Montserrat', sans-serif;
+        font-weight:500;
+        font-size:20pt;
+        margin-bottom:1.5rem;  
+    } 
 
     header {
         margin:32px;
@@ -80,6 +93,10 @@ html{
         font-size: 24px;
     }
 
+    menu {
+        margin: 64px 0px 64px 0px;
+    }
+
     menu button {
         font-family: 'Montserrat', sans-serif;
         font-size: 20px;
@@ -89,10 +106,15 @@ html{
         border: 0px;
     }
 
-
     menu ul {
         display: flex;
         flex-direction: column;
+        margin: 32px 0px 32px 0px;
+    }
+
+    menu div {
+        border-top: 1px black;
+        border-bottom: 1px black;
     }
 
     p {
@@ -121,6 +143,24 @@ html{
         text-decoration: none;
         font-weight: 600;
     }
+
+    .author a:link {
+        color: #0044F3;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .author a:visited {
+        color: #640094;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    
+    .author a:hover {
+        color: #A500F3;
+        text-decoration: none;
+        font-weight: 600;
+    }
     
     header ul {
         display: flex;
@@ -140,7 +180,7 @@ html{
 
     .author {
         background-color: #D2E5FD;
-        padding: 64px 16px 64px 16px;
+        padding: 64px 32px 32px 32px;
         font-size: 16px;
         line-height: 1.25;
         font-weight: 400;
@@ -148,10 +188,17 @@ html{
         margin:0px;
     }
 
+    .top {
+        position: fixed;
+        right: 30px;
+        z-index: 99;
+        height: 64px;
+    }
+
     footer {
         background-color: black;
         color: white;
-        padding: 64px 64px 64px 64px;
+        padding: 64px 32px 32px 32px;
     }
 
     footer p {
