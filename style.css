@@ -5,6 +5,11 @@ html{
     scroll-behavior: smooth;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
     b {
        font-weight: 600; 
     }
@@ -20,14 +25,31 @@ html{
         font-size:18pt;
     }
 
-    li p, time {
+    hgroup a:link {
+        color: #0044F3;
+    }
+    
+    hgroup a:hover {
+        color: #A500F3;
+    }
+
+    hgroup a:visited {
+        color: #640094;
+    }
+
+    header li {
+        font-family: 'Montserrat', sans-serif;
+        color:#579FFF
+    }
+
+    li p {
         font-family: 'Montserrat', sans-serif;
         color:#579FFF
     }
 
     hr{
-        border-bottom: 1px
-        solid black;
+        border-bottom: 1px solid black;
+        width: 100%;
         margin:20px 0px;
     }
 
@@ -95,6 +117,10 @@ html{
         border: 1px solid black;
     }
 
+    header button:hover{
+        background-color:#D6E7FF;
+    }
+    
     nav button:nth-child(1):hover{
         background-color:#D6E7FF;
     }
@@ -167,6 +193,8 @@ html{
         font-weight: 600;
     }
 
+    
+
     article a:visited {
         color: #640094;
         text-decoration: none;
@@ -207,10 +235,6 @@ html{
     section {
         padding: 0px 16px 0px 16px;
         margin: 64px 0px 64px 0px;
-    }
-
-    main {
-        padding: 0px 16px 0px 16px;
     }
 
     .author {
@@ -317,12 +341,14 @@ menu li {
         background: #C5CFE1;
     }
 
+/* desktop */
 
 @media (min-width: 480px) {
     header {
         display: flex;
         flex-direction: column;
-        width: 90%;
+        margin: auto;
+        max-width: 100em;
         align-items: center; 
     }
 
@@ -334,9 +360,9 @@ menu li {
         display: flex;
         flex-direction: horizontal;
         flex-wrap: wrap;
+        width: 100%;
         justify-content: space-between;
         align-items: end;
-        width: 100%;
     }
 
     aside {
@@ -345,47 +371,55 @@ menu li {
 
     header button {
         height: fit-content;
-        
     }
 
     nav button {
         white-space: nowrap;
     }
-    #sect2:hover{
-        background-color: #FFD8D6;
-    }
-
+   
     main { 
         display: flex;
-        flex-direction: horizontal;
+        flex-direction: row;
         justify-content: center;
         align-items: start;
         gap: 96px;
-        max-width: 90%;
-        margin-left: 32px;
+        margin: auto;
+        max-width: 100em;
     }
 
     article {
-        width: 64em;
+        max-width: 64em;
     }
 
     .author p{
-        max-width: 50%;
         margin: auto;
-        padding-top: 32px;
-        padding-bottom: 64px
+        max-width: 50%;
+        padding-bottom: 32px;
     }
 
     footer p {
         max-width: 50%;
         margin: auto;
+        padding-bottom: 32px;
     }
 
+    aside {
+        position: sticky;
+        top: 32px;
+        left: 96px;
+    }
 
+    
 }
 
-/* desktop / 
-//////////////Mobile menu///////
+@media (min-width: 768px){
+
+    h1 {
+        font-size: 96px;
+    }
+}
+
+/*/////////////Mobile menu///////
 aside{
         height:fit-content;
         font-family:'Montserrat', sans-serif;
