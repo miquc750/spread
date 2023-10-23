@@ -1,5 +1,8 @@
+/* Mobile version */
+
 html{
     background-color:white;
+    scroll-behavior: smooth;
 }
 
     b {
@@ -212,7 +215,8 @@ html{
         font-family: 'Montserrat', sans-serif;
     }
 
-/* size circles */
+    /* menu circles */
+
 .small {
     height: 6px;
     width: 6px;
@@ -246,7 +250,7 @@ menu li {
     break-inside: avoid;
 }
     
-/* adding circles */
+    /* header circles */
 
     span {
         height: 30px;
@@ -281,3 +285,66 @@ menu li {
     #sect6 span {
         background: #C5CFE1;
     }
+
+/* desktop */ 
+
+@media (min-width: 480px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center; 
+    }
+
+    header p {
+        max-width: 32em;
+    }
+
+    header section {
+        display: flex;
+        flex-direction: horizontal;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: end;
+        width: 100%;
+    }
+
+    aside {
+        max-width: 32em;
+    }
+
+    header button {
+        height: fit-content;
+    }
+
+    nav button {
+        white-space: nowrap;
+    }
+
+    main { 
+        display: flex;
+        flex-direction: horizontal;
+        justify-content: center;
+        align-items: start;
+        gap: 96px;
+        max-width: 90%;
+        margin-left: 32px;
+    }
+
+    article {
+        width: 64em;
+    }
+
+    .author p{
+        max-width: 50%;
+        margin: auto;
+        padding-top: 32px;
+        padding-bottom: 64px
+    }
+
+    footer p {
+        max-width: 50%;
+        margin: auto;
+    }
+}
