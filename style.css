@@ -72,6 +72,29 @@ html{
         margin:2% 0%;
     }
 
+    aside{
+        height:fit-content;
+        font-family:'Montserrat', sans-serif;
+        font-size:20pt; 
+        font-weight: 500;
+        align-content: left;
+        position:fixed;
+        top:0px;
+        width:100%;
+        padding:16px 16px;
+        background-color:#ffffff;
+        border-bottom: solid black 1px;
+        margin-left:-16px;
+    }
+    summary{
+        width:100%;
+        background-color:white;
+        height:fit-content;
+        text-align: center;
+
+    }
+
+
     nav button{
         background-color:white;
         top: 30px;
@@ -94,7 +117,7 @@ html{
 
     header button {
         font-size: 20px;
-        margin:10px -2px;
+    
     }
 
     menu {
@@ -286,10 +309,9 @@ menu li {
         background: #C5CFE1;
     }
 
-/* desktop */ 
+/* desktop / 
 
 @media (min-width: 480px) {
-
     header {
         display: flex;
         flex-direction: column;
