@@ -7,6 +7,15 @@
         <title>Don Norman on how design fails older consumers</title>
         <link href="https://typography-interaction-2324.github.io/assets/reset.css" rel="stylesheet">
         <link href="style_MM.css" rel="stylesheet">
+        <!-- Stylesheets, etc. -->
+    <script type="module">
+	// Switch classes via `select` element
+	const dropdown = document.getElementById('your-control-element')
+	dropdown.addEventListener('change', () => {
+		document.body.removeAttribute('class')
+		document.body.classList.add(dropdown.value)
+	})
+</script>
     </head>
     <body>
         <!-- header section -->
@@ -47,6 +56,7 @@
                     <ul><hr class="menuhr"></ul>
                     <ul>
                         <h3>Font size</h3>
+                        <!--buttons-
                         <button><div class="small"></div><a href="">Small</a></button>
                         <button class="selected"><div class="medium"></div><a href="">Medium</a></button>
                         <button><div class="large"></div><a href="">Large</a></button>
@@ -58,6 +68,7 @@
                         <button class="selected"><div class="medium"></div><a href="">Medium</a></button>
                         <button><div class="large"></div><a href="">High</a></button>
                     </ul>
+                    -->
                     <ul><hr class="menuhr"></ul>
                 </menu>
             </aside>    
