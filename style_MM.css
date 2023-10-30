@@ -1,5 +1,13 @@
 /* Mobile version */
 
+:root {
+    --regular-weight: 400;
+    --medium-weight: 500;
+    --bold-weight: 600;
+    --black-weight: 700;
+    --font-size: 20pt;
+}
+
 html{
     background-color:white;
     scroll-behavior: smooth;
@@ -13,12 +21,13 @@ main {
 article{
     margin:0px 16px;
 }
+
 aside{
     margin:0px 32px;
 }
 
     b {
-       font-weight: 600; 
+       font-weight: var(--bold-weight); 
     }
 
     em {
@@ -28,8 +37,8 @@ aside{
     li{
         color:579FFF;
         font-family: 'Montserrat', sans-serif;
-        font-weight:400;
-        font-size:18pt;
+        font-weight: var(--regular-weight);
+        font-size: calc(var(--font-size) - 2pt);
     }
 
     hgroup a:link {
@@ -68,8 +77,8 @@ aside{
     h1{
         color:black;
         font-family: 'EB Garamond', serif;
-        font-weight:500;
-        font-size:42pt;
+        font-weight: var(--medium-weight);
+        font-size:calc(var(--font-size) * 2.1);
         margin-bottom:2%;
         line-height:1.05em;
     }
@@ -77,8 +86,8 @@ aside{
     h2{
         color:black;
         font-family: 'EB Garamond', serif;
-        font-weight:500;
-        font-size:36pt;
+        font-weight: var(--medium-weight);
+        font-size:calc(var(--font-size) * 1.8);
         margin-bottom:1.5rem;
         line-height:1.1em;
         display: flex;
@@ -87,8 +96,8 @@ aside{
     h3 {
         color:black;
         font-family: 'Montserrat', sans-serif;
-        font-weight:500;
-        font-size:18pt;
+        font-weight: var(--medium-weight);
+        font-size: calc(var(--font-size) - 2pt);
         margin-bottom:1rem;  
     } 
 
@@ -98,12 +107,14 @@ aside{
 
     header p{
         font-family: 'Montserrat', sans-serif;
-        font-size:16pt;
+        font-size: calc(var(--font-size) - 4pt);
         margin:2% 0%;
     }
+
     header section p{
         margin-left:-16px;
     }
+
     header section button{
         margin-left:-16px;
     }
@@ -114,6 +125,8 @@ aside{
         gap: 12px;
     }
 
+        /* buttons */
+
 
     nav button{
         background-color:white;
@@ -123,7 +136,7 @@ aside{
 
     button {
         font-family: 'Montserrat', sans-serif;
-        font-size: 20px;
+        font-size: calc(var(--font-size) - 4pt);
         margin:8px 16px;
         padding: 5px 15px 5px 15px;
         border-radius: 50px;
@@ -159,8 +172,12 @@ aside{
     }
     
     header button {
-        font-size: 20px;
-    
+        font-size: calc(var(--font-size) - 4pt);
+    }
+
+    .selected {
+        color: #0044F3;
+        font-weight: var(--bold-weight);
     }
 
     menu {
@@ -169,7 +186,7 @@ aside{
 
     menu button {
         font-family: 'Montserrat', sans-serif;
-        font-size: 20px;
+        font-size: calc(var(--font-size) - 4pt);
         margin:0.5rem 0rem;
         padding: 0px;
         border-radius: 50px;
@@ -182,7 +199,7 @@ aside{
 
     menu button:hover {
         color: #0044F3;
-        font-weight: 700px;
+        font-weight: var(--black-weight);
     }
 
     menu ul {
@@ -194,48 +211,48 @@ aside{
     p {
         color:black;
         font-family: 'EB Garamond', serif;
-        font-weight:400;
-        font-size:20pt;
+        font-weight: var(--regular-weight);
+        font-size: var(--font-size);
         line-height: 1.25;
         margin-bottom: 2rem;
     }
 
+        /* link states */
+
     article a:link {
         color: #0044F3;
         text-decoration: none;
-        font-weight: 600;
+        font-weight: var(--bold-weight);
     }
-
-    
-
+ 
     article a:visited {
         color: #640094;
         text-decoration: none;
-        font-weight: 600;
+        font-weight: var(--bold-weight);
     }
     
     article a:hover {
         color: #A500F3;
         text-decoration: none;
-        font-weight: 600;
+        font-weight: var(--bold-weight);
     }
 
     .author a:link {
         color: #0044F3;
         text-decoration: none;
-        font-weight: 600;
+        font-weight: var(--bold-weight);
     }
 
     .author a:visited {
         color: #640094;
         text-decoration: none;
-        font-weight: 600;
+        font-weight: var(--bold-weight);
     }
     
     .author a:hover {
         color: #A500F3;
         text-decoration: none;
-        font-weight: 600;
+        font-weight: var(--bold-weight);
     }
     
     header ul {
@@ -253,9 +270,9 @@ aside{
     .author {
         background-color: #D2E5FD;
         padding: 64px 32px 32px 32px;
-        font-size: 16px;
+        font-size: calc(var(--font-size) - 2pt);
         line-height: 1.25;
-        font-weight: 400;
+        font-weight: var(--regular-weight);
         font-family: 'Montserrat', sans-serif;
         margin:0px;
     }
@@ -272,18 +289,19 @@ aside{
     footer {
         background-color: black;
         color: white;
-        padding: 64px 32px 32px 32px;
+        padding: 64px 32px 12px 32px;
+        margin-bottom: 0px;
     }
 
     footer p {
         color: white;
-        font-size: 14px;
+        font-size: calc(var(--font-size) / 1.75);
         line-height: 1.25;
-        font-weight: 400;
+        font-weight: var(--regular-weight);
         font-family: 'Montserrat', sans-serif;
     }
 
-    /* menu circles */
+/* menu circles */
 
 div {
     width: 18px;
@@ -308,7 +326,7 @@ div {
     width: 12px;
     margin: 0px 3px 0px 3px;
     border-radius: 50%;
-    background: black;
+    background: #0044F3;
     display: inline-block;
     margin-right:1%;
 }
@@ -452,7 +470,7 @@ menu li {
     }
 
     h1 {
-        font-size: 96px;
+        font-size: calc(var(--font-size) * 3.6);
     }
 
     aside {
@@ -477,6 +495,7 @@ prefers-reduced-motion {
 }
 
 /* For print */
+
 @media print{
     :root{
         --background-color:white;
@@ -498,15 +517,15 @@ prefers-reduced-motion {
     }
     article a:visited {
         color:black;
-        font-weight:400px;
+        font-weight: var(--regular-weight);
     }
     article a:link{
         color:black;
-        font-weight:400px;
+        font-weight: var(--regular-weight);
     }
     .author a:link{
         color:black;
-        font-weight:400px;
+        font-weight: var(--regular-weight);
     }
     article #sect6 {
         border-bottom:1px solid black ;
