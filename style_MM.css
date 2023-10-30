@@ -1,4 +1,4 @@
-/* Mobile version */
+/* changing styles */
 
 :root {
     --regular-weight: 400;
@@ -7,6 +7,32 @@
     --black-weight: 700;
     --font-size: 20pt;
 }
+
+.smallfont {
+    --font-size: 16pt;
+}  
+
+.mediumfont {
+    --font-size: 20pt;
+} 
+
+.largefont {
+    --font-size: 24pt;
+} 
+
+.lowcontrast {
+
+}
+
+.mediumcontrast {
+
+}
+
+.highcontrast {
+    
+}
+
+/* Mobile version */
 
 html{
     background-color:white;

@@ -7,15 +7,17 @@
         <title>Don Norman on how design fails older consumers</title>
         <link href="https://typography-interaction-2324.github.io/assets/reset.css" rel="stylesheet">
         <link href="style_MM.css" rel="stylesheet">
-        <!-- Stylesheets, etc. -->
-    <script type="module">
-	// Switch classes via `select` element
-	const dropdown = document.getElementById('your-control-element')
-	dropdown.addEventListener('change', () => {
-		document.body.removeAttribute('class')
-		document.body.classList.add(dropdown.value)
-	})
-</script>
+        
+        <!-- JS to change Stylesheets -->
+        <script type="module">
+            // Switch classes via `select` element
+            const dropdown = document.getElementById('your-control-element')
+            dropdown.addEventListener('change', () => {
+                document.body.removeAttribute('class')
+                document.body.classList.add(dropdown.value)
+            })
+        </script>
+
     </head>
     <body>
         <!-- header section -->
@@ -55,20 +57,42 @@
                 <menu>
                     <ul><hr class="menuhr"></ul>
                     <ul>
-                        <h3>Font size</h3>
-                        <!--buttons-
-                        <button><div class="small"></div><a href="">Small</a></button>
-                        <button class="selected"><div class="medium"></div><a href="">Medium</a></button>
-                        <button><div class="large"></div><a href="">Large</a></button>
+                        <li>
+                            <h3>Font Size</h3>
+                            <select id="your-control-element">
+                                <option value="smallfont" selected>Small</option>
+                                <option value="mediumfont">Medium</option>
+                                <option value="largefont">Large</option>
+                            </select>
+                        </li>
+                        <ul><hr class="menuhr"></ul>
+                        <li>
+                            <h3>Contrast</h3>
+                            <select id="your-control-element">
+                                <option value="lowcontrast" selected>Small</option>
+                                <option value="mediumcontrast">Medium</option>
+                                <option value="largecontrast">Large</option>
+                            </select>
+                        </li>
                     </ul>
-                    <ul><hr class="menuhr"></ul>
-                    <ul>
-                        <h3>Contrast</h3>
-                        <button><div class="small"></div><a href="">Low</a></button>
-                        <button class="selected"><div class="medium"></div><a href="">Medium</a></button>
-                        <button><div class="large"></div><a href="">High</a></button>
-                    </ul>
+
+
+                    <!--buttons-
+                        <ul>
+                            <h3>Font size</h3>
+                            <button><div class="small"></div><a href="">Small</a></button>
+                            <button class="selected"><div class="medium"></div><a href="">Medium</a></button>
+                            <button><div class="large"></div><a href="">Large</a></button>
+                        </ul>
+                        <ul><hr class="menuhr"></ul>
+                        <ul>
+                            <h3>Contrast</h3>
+                            <button><div class="small"></div><a href="">Low</a></button>
+                            <button class="selected"><div class="medium"></div><a href="">Medium</a></button>
+                            <button><div class="large"></div><a href="">High</a></button>
+                        </ul>
                     -->
+
                     <ul><hr class="menuhr"></ul>
                 </menu>
             </aside>    
