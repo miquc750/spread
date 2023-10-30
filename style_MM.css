@@ -21,21 +21,33 @@
 } 
 
 .lowcontrast {
-
+    background-color: #f4f9ff;
+    --regular-weight: 400;
+    --medium-weight: 500;
+    --bold-weight: 600;
+    --black-weight: 700;
 }
 
 .mediumcontrast {
-
+    --regular-weight: 400;
+    --medium-weight: 500;
+    --bold-weight: 600;
+    --black-weight: 700;
 }
 
 .highcontrast {
+    --regular-weight: 500;
+    --medium-weight: 600;
+    --bold-weight: 700;
+    --black-weight: 800;
     
 }
 
 /* Mobile version */
-
+.largefont {
+    --font-size: 22pt;
+} 
 html{
-    background-color:white;
     scroll-behavior: smooth;
 }
 
@@ -505,7 +517,6 @@ menu li {
         max-height: 100vh;
         overflow-y: scroll;
         min-width: 24em;
-        background-color: white;
         top: 32px;
     }
 

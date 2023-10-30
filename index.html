@@ -11,10 +11,16 @@
         <!-- JS to change Stylesheets -->
         <script type="module">
             // Switch classes via `select` element
-            const dropdown = document.getElementById('your-control-element')
+            const dropdown = document.getElementById('font-size')
             dropdown.addEventListener('change', () => {
                 document.body.removeAttribute('class')
                 document.body.classList.add(dropdown.value)
+            })
+            // Switch classes via `select` element
+            const dropdowncontrast = document.getElementById('contrast')
+            dropdowncontrast.addEventListener('change', () => {
+                document.body.removeAttribute('class')
+                document.body.classList.add(dropdowncontrast.value)
             })
         </script>
 
@@ -59,7 +65,7 @@
                     <ul>
                         <li>
                             <h3>Font Size</h3>
-                            <select id="your-control-element">
+                            <select id="font-size">
                                 <option value="smallfont" selected>Small</option>
                                 <option value="mediumfont">Medium</option>
                                 <option value="largefont">Large</option>
@@ -68,10 +74,10 @@
                         <ul><hr class="menuhr"></ul>
                         <li>
                             <h3>Contrast</h3>
-                            <select id="your-control-element">
-                                <option value="lowcontrast" selected>Small</option>
+                            <select id="contrast">
+                                <option value="lowcontrast" selected>Low</option>
                                 <option value="mediumcontrast">Medium</option>
-                                <option value="largecontrast">Large</option>
+                                <option value="highcontrast">High</option>
                             </select>
                         </li>
                     </ul>
